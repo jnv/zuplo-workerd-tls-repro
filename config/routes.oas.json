@@ -4,5 +4,29 @@
     "version": "1.0.0",
     "title": "My Zuplo API"
   },
-  "paths": {}
+  "paths": {
+    "/path-1": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "get": {
+        "summary": "New Route",
+        "description": "",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "urlForwardHandler",
+            "module": "$import(@zuplo/runtime)",
+            "options": {
+              "baseUrl": "https://getting-started.zuplo.io"
+            }
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "04ebfbbe-be9f-4a23-830f-4451245daa7f"
+      }
+    }
+  }
 }
