@@ -15,5 +15,8 @@
     "@types/node": "^20",
     "prettier": "^3",
     "typescript": "^5"
+  },
+  "overrides": {
+    "workerd": "v1.20250121.0"
   }
 }
