@@ -4,12 +4,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "zuplo dev",
-    "test": "zuplo test",
+    "dev": "zup dev",
+    "test": "zup test",
     "lint": "eslint"
   },
   "dependencies": {
-    "zuplo": "^6"
+    "zuplo": "latest"
   },
   "devDependencies": {
     "@types/node": "^20",
